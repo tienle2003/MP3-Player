@@ -1,0 +1,46 @@
+@media (max-width: 739px) {
+    body {
+        display: block;
+        height: auto;
+        background-image: none;
+        background-color: black;
+    }
+    .page_music {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+    }
+    .music_dashboard {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: transparent;
+        backdrop-filter: blur(0px);
+        border-radius: 0;
+        background-image: url(./img/background_moblie.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: auto;
+    }
+    .name_song {
+        color: var(--secondary-color);
+    }
+    .music_playlist {
+        position: unset;
+        border-radius: 0;
+        height: 100vh;
+        display: block;
+        opacity: 1;
+        padding-top: 520px;
+        transform:none !important;
+    }
+    .playlist_btn {
+        display: none;
+    }
+    .song {
+        margin: 0px 0px 15px 0px;
+    }
+}

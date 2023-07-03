@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/img/logo.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/responsive.css" />
+    <title>MP3 Player</title>
+</head>
+
+<body>
+    <div class="page_music">
+        <div class="music_dashboard">
+            <!-- playlist button -->
+            <i class="fa-solid fa-bars playlist_btn btn-hover"></i>
+
+            <!-- desription about song -->
+            <div class="music_name">
+                <div class="name_singer"></div>
+                <div class="name_song"></div>
+            </div>
+
+            <!-- CD -->
+            <div class="cd">
+                <div class="cd_thumb"></div>
+            </div>
+
+            <!-- control music -->
+            <div class="controls">
+                <div class="control_btn">
+                    <i class="fa-solid fa-repeat btn-repeat"></i>
+                    <i class="fa-solid fa-backward-step btn-hover"></i>
+                    <i class="fa-solid fa-play fa-pause btn-hover"></i>
+                    <i class="fa-solid fa-forward-step btn-hover"></i>
+                    <i class="fa-solid fa-shuffle btn-random"></i>
+                </div>
+                <input type="range" class="progress_value" value="0" step="1" min="0" max="100" />
+                <div class="progress_time">
+                    <div class="progress_time-current">00:00</div>
+                    <div class="progress_time-duration">18:00</div>
+                </div>
+                <div class="volume_bar">
+                    <i class="fa-solid fa-volume-high volume_icon btn-hover"></i>
+                    <input type="range" class="volume_value" value="100" step="1" min="0" max="100" />
+                </div>
+            </div>
+            <audio id="audio" src=""></audio>
+        </div>
+        <div class="music_playlist"></div>
+    </div>
+    <script src="./assets/main.js"></script>
+</body>
+
+</html>
